@@ -189,7 +189,7 @@ function windowResized() {
 
 
 ```
-###The scene is a first-person view inside an underwater tunnel. The tunnel slightly distorts and deforms, with a wavy water-like flow. Text appears in the center of the screen. When the player clicks anywhere on the screen, the text distorts and slowly disappears, and new text appears.
-###Basically, the cave tunnel is constructed from a series of ring-shaped structures. Each ring has a depth value, which represents its position along the z-axis. At the same time, I define a camera position that represents the player’s viewpoint.
+### The scene is a first-person view inside an underwater tunnel. The tunnel slightly distorts and deforms, with a wavy water-like flow. Text appears in the center of the screen. When the player clicks anywhere on the screen, the text distorts and slowly disappears, and new text appears.
+### Basically, the cave tunnel is constructed from a series of ring-shaped structures. Each ring has a depth value, which represents its position along the z-axis. At the same time, I define a camera position that represents the player’s viewpoint.
 The entire system is driven by the relationship between these two values. Each ring calculates its distance to the camera, and based on that distance, its scale and color are adjusted. The farther a ring is, the smaller and darker it becomes. When the player clicks, the camera moves forward, and all the rings update their appearance based on the new distance. This creates a simple 3D perspective effect in a 2D environment.
 Link:https://editor.p5js.org/supperred1/full/irVhZy8zf
